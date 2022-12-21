@@ -9,7 +9,7 @@
     <style>
         div.mycalculetor {
             width: 400px;
-            height: 400px;
+            height: 415px;
             background: #333;
             padding: 10px;
             margin: 100px auto;
@@ -29,13 +29,19 @@
         table.mytable {
             width: 100%;
             height: 290px;
+            margin-top: 2em;
         }
 
         table button {
             width: 100%;
-            height: 45px;
+            height: 65px;
             border-radius: 20px;
             font-size: 2em;
+        }
+
+        button:hover {
+
+            opacity: 0.9;
         }
     </style>
 </head>
@@ -46,50 +52,66 @@
         <table class="mytable">
             <tr>
                 <td>
-                    <button onclick="panakj(this)">9</button>
+                    <button onclick="pankaj(this)">9</button>
                 </td>
                 <td>
-                    <button onclick="panakj(this)">8</button>
+                    <button onclick="pankaj(this)">8</button>
                 </td>
                 <td>
-                    <button onclick="panakj(this)">7</button>
+                    <button onclick="pankaj(this)">7</button>
                 </td>
                 <td>
-                    <button onclick="panakj(this)">/</button>
+                    <button onclick="pankaj(this)">/</button>
                 </td>
 
             </tr>
 
             <tr>
-                <td><button onclick="panakj(this)">6</button></td>
-                <td><button onclick="panakj(this)">5</button></td>
-                <td><button onclick="panakj(this)">4</button></td>
-                <td><button onclick="panakj(this)">-</button></td>
+                <td><button onclick="pankaj(this)">6</button></td>
+                <td><button onclick="pankaj(this)">5</button></td>
+                <td><button onclick="pankaj(this)">4</button></td>
+                <td><button onclick="pankaj(this)">-</button></td>
 
             </tr>
             <tr>
-                <td><button onclick="panakj(this)">3</button></td>
-                <td><button onclick="panakj(this)">2</button></td>
-                <td><button onclick="panakj(this)">1</button></td>
-                <td><button onclick="panakj(this)">x</button></td>
+                <td><button onclick="pankaj(this)">3</button></td>
+                <td><button onclick="pankaj(this)">2</button></td>
+                <td><button onclick="pankaj(this)">1</button></td>
+                <td><button onclick="pankaj(this)">x</button></td>
             </tr>
             <tr>
-                <td><button onclick="panakj(this)">0</button></td>
-                <td><button onclick="panakj(this)">.</button></td>
-                <td><button onclick="panakj(this)">+</button></td>
-                <td><button onclick="panakj(this)">=</button></td>
+                <td><button onclick="pankaj(this)">0</button></td>
+                <td><button onclick="pankaj(this)">.</button></td>
+                <td><button onclick="pankaj(this)">+</button></td>
+                <td><button onclick="pankaj(this)">=</button></td>
             </tr>
         </table>
     </div>
     <script>
+        let r = document.querySelector("div.myresult");
+        var leftvalue;
+        var rightvalue;
+        var opretor;
 
-        let r = document.querySelector("div.myresult")
-
-        r.innerHTML;
-        console.log(r.innerHTML)
         function pankaj(elem) {
-            console.log(r.elem.innerHTML);
-        }
+         console.log('leftvalue',elem.innerHTML)
+          console.log('rightvalue',elem.innerHTML)  
+          console.log(elem.innerHTML);
+            }
+//             switch(expression) {
+//   case x:
+//     // code block
+//     break;
+//   case y:
+//     // code block
+//     break;
+//   default:
+//     // code block
+// }
+switch(elem.innerHTML){
+    case x:leftvalue
+    break;
+}
     </script>
 </body>
 
